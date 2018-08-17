@@ -1,0 +1,57 @@
+spring:
+    application:
+      name: Spring-Batch1
+    batch: 
+        job: 
+          enabled: false
+        initializer: 
+          enabled: false
+    jpa:
+      hibernate:
+        ddl-auto: create
+    show-sql: true
+    datasource:
+      sql: 
+          url: jdbc:oracle:thin:@localhost:1521:xe
+          driver-class-name: oracle.jdbc.driver.OracleDriver
+      mysql: 
+          url: jdbc:mysql:///venu
+          driver-class-name: com.mysql.jdbc.Driver
+          
+          
+server:
+    port: 8055
+    contextPath: /testbatch
+    
+    
+    
+#batch:
+#  job:
+#    configuration:
+#      file:
+#        dir: target/config
+#    service:
+#      reaper:
+#        interval: 60000
+#  jdbc:
+#    driver: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@localhost:1521:xe;integratedSecurity=true;authenticationScheme=NativeAuthentication;applicationName=Spring-Batch1
+#    user: ""
+#    password: ""
+#    testWhileIdle: false
+#    validationQuery:
+#  database:
+#    incrementer:
+#      class: org.springframework.jdbc.support.incrementer.SqlServerMaxValueIncrementer
+#  schema:
+#    script: classpath*:/org/springframework/batch/core/schema-sqlserver.sql
+#  drop:
+#    script: classpath*:/org/springframework/batch/core/schema-drop-sqlserver.sql
+#  data:
+#    source:
+#      init: false
+#  table:
+#    prefix: SPG.BATCH_
+#  business:
+#    schema:
+#      script: classpath*:business-schema-sqlserver.sql

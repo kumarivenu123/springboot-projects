@@ -1,0 +1,12 @@
+server:
+  port: 9898
+spring:
+  datasource:
+    url: jdbc:mysql:///venu
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: venu
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true

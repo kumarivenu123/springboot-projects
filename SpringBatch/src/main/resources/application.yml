@@ -1,0 +1,21 @@
+server:
+  port: 7878
+  contextPath: /batchdemo
+spring:
+    application:
+      name: batch_ordermanagement_desirabilityindex
+    batch: 
+        job: 
+          enabled: false
+        initializer: 
+          enabled: false
+    datasource:
+      mysql: 
+          url: jdbc:mysql:///venu
+          driver-class-name: com.mysql.jdbc.Driver
+      oracle: 
+          url: jdbc:oracle:thin:@localhost:1521:xe
+          driver-class-name: oracle.jdbc.driver.OracleDriver
+                                   
+
+    

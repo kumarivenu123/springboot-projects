@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+
+<entry key="selectQuery">
+    <![CDATA[
+   SELECT empId AS empId , empName  AS empName  FROM Employee WITH UR
+    ]]>
+	</entry>
+	
+	
+	
+</properties>
